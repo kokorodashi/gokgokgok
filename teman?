@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Teman?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #f2f2f2;
+      overflow: hidden;
+    }
+
+    .rain {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('https://i.ibb.co/0Jmshvb/rain.gif');
+      background-size: cover;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 5% auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeInText 3s ease forwards;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      opacity: 0;
+      animation: fadeInText 1.5s ease forwards;
+      animation-delay: 1s;
+    }
+
+    p:nth-of-type(2) { animation-delay: 2s; }
+    p:nth-of-type(3) { animation-delay: 3s; }
+    p:nth-of-type(4) { animation-delay: 4s; }
+    p:nth-of-type(5) { animation-delay: 5s; }
+    p:nth-of-type(6) { animation-delay: 6s; }
+
+    @keyframes fadeInText {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(10px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .music {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    iframe {
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="rain"></div>
+
+  <div class="container">
+    <h1>Teman?</h1>
+    <p>Kadang gw bingung... sebenernya kita ini apa, sih?</p>
+    <p>Kita deket, sering ngobrol, saling cari, saling nyari... tapi gak pernah ada label.</p>
+    <p>Gw gak tau harus seneng karena lu ada, atau sedih karena gak pernah bisa punya lu.</p>
+    <p>Gw tau, ini bukan pacaran. Tapi rasanya juga bukan cuma temenan.</p>
+    <p>Lu bikin gw nyaman, tapi juga bikin gw ragu. Gw takut berharap, tapi susah juga buat gak ngerasa apa-apa.</p>
+    <p>Lu pernah ngerasa yang sama gak? Atau ini cuma gw doang yang terlalu baper?</p>
+    <p>Tapi ya... kalau suatu saat nanti kita beneran jauh, Gw cuma mau bilang: makasih. Makasih udah jadi "nyaris" yang paling gw inget.</p>
+
+    <div class="music">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/73DWDOjVUyJ8sAiAcySvgS?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+</body>
+</html>
